@@ -7,29 +7,34 @@ function App() {
     {
       id: 1,
       state: true,
-      text: 'Home'
+      button: "Home",
+      text: 'This is home text.'
     },
     {
       id: 2,
       state: false,
-      text:'About'
+      button: "About",
+      text:'This is about text.'
     },
     {
       id: 3,
       state: false,
-      text:'Contact'
+      button: "Contact",
+      text:'Contact me.'
     }
   ]);
 
   const togglePage = (id) => (
-    setPageState(pageState.map((pages) => (
-      {...pageState, state: !pages.state}
-    )))
+    setPageState(
+      pageState.map((pages) => (
+      (id === pages.id) ? { ...pages, state: true } : { ...pages, state: false}
+    ))
+    )
   );
 
   return (
     <div className="App">
-      <Header text={'Add'} pageState={pageState} clickFunct={() => togglePage(1)}/>
+      <Header pageState={pageState} clickFunct={(id) => togglePage(id)}/>
       <Body pageState={pageState} />
     </div>
   );

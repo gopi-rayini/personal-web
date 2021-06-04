@@ -1,12 +1,12 @@
 import Button from "./Button"
 
-const Header = ({text, clickFunct, pageState}) => {
+const Header = ({ clickFunct, pageState }) => {
     return (
-        <div>
+        <div className="header-wrapper">
             <h1 className="title">Welcome!</h1>
             <div className="buttons-wrapper">
                 {pageState.map((page) => (
-                    <Button key={page.id} text={text} clickFunct={clickFunct}/>
+                    <Button key={page.id} text={page.button} clickFunct={() => clickFunct(page.id)}/>
                 ))}
             </div>
         </div>

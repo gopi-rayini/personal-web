@@ -1,10 +1,12 @@
+import Content from "./Content"
+
 const Body = ({pageState}) => {
     return (
-        <div>
+        <div className="body-wrapper">
             {
-                pageState.map((pages) => ( 
-                    pages.state && <li key={(pages.id)+1}>{pages.text}</li> 
-                ))
+                    pageState.map((page) => ( 
+                        <Content page={page}/>
+                    ))
             }
         </div>
     )
