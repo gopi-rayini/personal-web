@@ -4,9 +4,9 @@ const Body = ({pageState}) => {
     return (
         <div className="body-wrapper">
             {
-                    pageState.map((page) => ( 
-                        <Content page={page}/>
-                    ))
+                pageState.map((page) => ( 
+                    <Content page={page}/>
+                ))
             }
         </div>
     )

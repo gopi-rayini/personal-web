@@ -10,6 +10,14 @@ code {
     monospace;
 }
 
+button{
+  font-family: "Courier New";
+  border: none;
+  background-color: rgba(255,255,255,0.7);
+
+  border-radius: 5px;
+}
+
 .App{
   font-family: "Courier New";
   color: greenyellow;
@@ -22,7 +30,9 @@ code {
 }
 
 .body-wrapper{
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -34,6 +44,14 @@ code {
 
 .title{
   margin:auto;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.btn{
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 150px;
 }
 
 .show{
@@ -42,4 +60,52 @@ code {
 
 .hide{
   display: none;
+}
+
+.content{
+  margin: 20px 0 0 0;
+}
+
+.About{
+  display:flex;
+  width: 100%;
+  padding: 10px;
+  
+  border-radius: 5px;
+  justify-content: space-evenly;
+
+}
+
+.Contact{
+  width: 100%;
+  padding: 30px;
+  display:flex;
+  flex-direction: column;
+
+  border-radius: 5px;
+
+
+}
+
+.email{
+  width: 40%;
+  padding: 10px;
+}
+
+.message{
+  width: 50%;
+  margin-top: 20px;
+  line-height: 28px;
+  text-overflow: clip;
+  padding: 10px;
+  height: 300px;
+}
+
+.send{
+  margin-top: 10px;
+  padding: 20px;
+  width: 100px;
+  border-radius: 7px;
+
+  font-size: 1.5rem;
 }
