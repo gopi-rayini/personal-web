@@ -22,13 +22,17 @@ const Content = ({page}) => {
                             <div className="text-wrapper">
                                 <h1>Hi, my name is Gopi and I'm a Web Developer!</h1>
                                 <h4>&#8811; This website serves as my portfolio and as a personal website to give you a bit more information about me.</h4>
-                                <p>&#8811; If you'd like to explore more about my <span className="yellow">professional</span> background, click on the <span className="bold red">About</span> tab above.</p>
+                                <p>&#8811; If you'd like to explore more about my <span className="yellow">professional</span> background, click on the <span className="bold red">Resume</span> tab above.</p>
                                 <p>&#8811; As a recent graduate from the Rutger's School of Communications and Information, I have gained a valuable skillset to help me excel in my career as a Web Developer.</p>
                                 <p>&#8811; . . .</p>
                                 <p>&#8811; _</p>
                             </div>
                             <img alt="Pic" src={download}></img>
                         </div>                        
+                    </div>
+                    <div className="slight-right">
+                        <h1>Who am I?</h1>
+
                     </div>
                 </FadeDownDiv>
                 }
@@ -66,10 +70,11 @@ const Content = ({page}) => {
                         <div className="slight-right">
                             <h1>Projects</h1>
                             <div className="exp-cont">
-                                <h3>Aaseya IT</h3>
-                                <h3>May 2018 - August 2018</h3>
+                                <h3>Senior Year Final (<a href="https://gopi-rayini.github.io/final-project-resume/">Portfolio</a> Website)</h3>
+                                <h3>2021</h3>
                             </div>
-                            <li>Yo</li>
+                            <li>Portfolio project designed to showcase advanced HTML and CSS skills including flexbox, girds, and media queries</li>
+                            <li>Features a mobile-first and responsive web design</li>                            
                         </div>
                         <div className="slight-right">
                             <h1>Experience</h1>
@@ -77,12 +82,15 @@ const Content = ({page}) => {
                                 <h3>Aaseya IT</h3>
                                 <h3>May 2018 - August 2018</h3>
                             </div>
-                            <li>Yo</li>
+                            <li>Learned and applied PEGA concepts in multiple team projects to deliver a business process optimization program. </li>
+                            <li>Coordinated with team members in an agile development environment to produce a high fidelity UI design for the PEGA program. </li>
                             <div className="exp-cont">
                                 <h3>Rutger's Esports</h3>
-                                <h3>2018 - 2021</h3>
+                                <h3>September 2018 - May 2021</h3>
                             </div>
-                            <li>Yo</li>
+                            <li>Gained valuable communication, management, and leadership skills as a team captain for the VALORANT team.</li>
+                            <li>Experienced the dynamics of team-oriented organizations by serving as a board member.</li>
+                            <li>Managed funds and prizing for multiple events as treasurer</li>
                             <div className="exp-cont">
                                 <h3>Aaseya IT</h3>
                                 <h3>May 2018 - August 2018</h3>
@@ -96,6 +104,7 @@ const Content = ({page}) => {
 
                 {page.id === 3 && 
                  <FadeDownDiv className={page.button}>
+                     <h1>Socials</h1>
                      <div className="socials-wrapper">
                            <a href="https://www.linkedin.com/in/gkr9/">
                               <svg className="soc" xmlns="https://www.linkedin.com/in/gkr9/" width="24" height="24" viewBox="0 0 24 24" fill="rgba(173,255,47,.7)"><path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62V20.1zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.02 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.45-.52-2.45-1.83-2.45-1 0-1.6.67-1.87 1.32-.1.23-.11.55-.11.88v6.05H9.28s.05-9.82 0-10.84h3.63v1.54a3.6 3.6 0 0 1 3.26-1.8c2.39 0 4.18 1.56 4.18 4.89v6.21z" /></svg>
@@ -112,6 +121,7 @@ const Content = ({page}) => {
                               <svg className="soc" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgba(173,255,47,.7)"><path d="M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0 0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0 0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72 9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6 2.45-2.61z" /></svg>
                            </a>            
                      </div>
+                     <h1>Contact Box</h1>
                      <div className="contact-wrapper">
                         <input className="email" placeholder="E-mail"></input>
                         <textarea className="message" placeholder="Message"></textarea>

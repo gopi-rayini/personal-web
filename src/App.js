@@ -14,7 +14,7 @@ function App() {
     {
       id: 2,
       state: false,
-      button: "About",
+      button: "Resume",
       text:'This is about text.'
     },
     {
@@ -35,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+    <div className="part">
       <Particles className="particle-bg"
                 params={{
                     "particles": {
@@ -55,8 +56,11 @@ function App() {
                     }
                 }} 
             />
+    </div>
+    <div>
       <Header pageState={pageState} clickFunct={(id) => togglePage(id)}/>
       <Body pageState={pageState} />
+      </div>
     </div>
   );
 
