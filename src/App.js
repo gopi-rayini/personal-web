@@ -1,6 +1,7 @@
 import Header from "./components/Header"
 import Body from "./components/Body"
 import React, { useState } from 'react'
+import Particles from "react-particles-js"
 
 function App() {
   const [pageState, setPageState] = useState([
@@ -34,6 +35,26 @@ function App() {
 
   return (
     <div className="App">
+      <Particles className="particle-bg"
+                params={{
+                    "particles": {
+                        "number": {
+                            "value": 25
+                        },
+                        "size": {
+                            "value": 2
+                        }
+                    },
+                    "interactivity": {
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "repulse"
+                            }
+                        }
+                    }
+                }} 
+            />
       <Header pageState={pageState} clickFunct={(id) => togglePage(id)}/>
       <Body pageState={pageState} />
     </div>

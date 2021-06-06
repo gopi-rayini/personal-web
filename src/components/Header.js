@@ -1,4 +1,5 @@
 import Button from "./Button"
+import Particles from "react-particles-js"
 
 const Header = ({ clickFunct, pageState }) => {
     return (
